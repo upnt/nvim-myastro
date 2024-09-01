@@ -13,62 +13,37 @@ return {
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
   },
-
   {
-    "loctvl842/monokai-pro.nvim",
-    config = function()
-      require("monokai-pro").setup {
-        transparent_background = true,
-        terminal_colors = true,
-        devicons = true, -- highlight the icons of `nvim-web-devicons`
-        styles = {
-          comment = { italic = true },
-          keyword = { italic = true }, -- any other keyword
-          type = { italic = true }, -- (preferred) int, long, char, etc
-          storageclass = { italic = true }, -- static, register, volatile, etc
-          structure = { italic = true }, -- struct, union, enum, etc
-          parameter = { italic = true }, -- parameter pass in function
-          annotation = { italic = true },
-          tag_attribute = { italic = true }, -- attribute of tag in reactjs
-        },
-        filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
-        -- Enable this will disable filter option
-        day_night = {
-          enable = false, -- turn off by default
-          day_filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
-          night_filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
-        },
-        inc_search = "background", -- underline | background
-        background_clear = {
-          -- "float_win",
-          "toggleterm",
-          "telescope",
-          "which-key",
-          "renamer",
-          -- "notify",
-          -- "nvim-tree",
-          -- "neo-tree",
-          -- "bufferline", -- better used if background of `neo-tree` or `nvim-tree` is cleared
-        }, -- "float_win", "toggleterm", "telescope", "which-key", "renamer", "neo-tree", "nvim-tree", "bufferline"
-        plugins = {
-          bufferline = {
-            underline_selected = false,
-            underline_visible = false,
-          },
-          indent_blankline = {
-            context_highlight = "default", -- default | pro
-            context_start_underline = false,
-          },
-        },
-        ---@param c Colorscheme
-        -- override = function(c) end,
-        ---@param cs Colorscheme
-        ---@param p ColorschemeOptions
-        ---@param Config MonokaiProOptions
-        ---@param hp Helper
-        -- override = function(cs: Colorscheme, p: ColorschemeOptions, Config: MonokaiProOptions, hp: Helper) end,
-      }
-    end,
+    "tokyonight.nvim",
+    defaults = {
+      style = "storm",
+      transparent = true,
+    },
+  },
+  {
+    "arnaupv/nvim-devcontainer-cli",
+    opts = {
+      -- By default, if no extra config is added, following nvim_dotfiles are
+      -- installed: "https://github.com/LazyVim/starter"
+      -- This is an example for configuring other nvim_dotfiles inside the docker container
+      nvim_dotfiles_repo = "https://github.com/upnt/devcontainer-dotfiles.git",
+      nvim_dotfiles_install_command = "cd ~/nvim_dotfiles/ && ./install.sh",
+      -- In case you want to change the way the devenvironment is setup, you can also provide your own setup
+      -- setup_environment_repo = "https://github.com/upnt/setup-environment",
+      -- setup_environment_install_command = "./install.sh -p 'nvim stow zsh'",
+    },
+    keys = {
+      {
+        "<leader>tu",
+        ":DevcontainerUp<cr>",
+        desc = "Up the DevContainer",
+      },
+      {
+        "<leader>tc",
+        ":DevcontainerConnect<cr>",
+        desc = "Connect to DevContainer",
+      },
+    },
   },
 
   -- == Examples of Overriding Plugins ==
