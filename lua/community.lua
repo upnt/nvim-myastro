@@ -9,6 +9,6 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
-  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   -- import/override with your plugins folder
 }

@@ -14,11 +14,12 @@ return {
     config = function() require("lsp_signature").setup() end,
   },
   {
-    "tokyonight.nvim",
-    defaults = {
-      style = "storm",
-      transparent = true,
-    },
+    "loctvl842/monokai-pro.nvim",
+    config = function()
+      require("monokai-pro").setup {
+        filter = "pro",
+      }
+    end,
   },
   {
     "arnaupv/nvim-devcontainer-cli",
