@@ -17,7 +17,31 @@ return {
     "loctvl842/monokai-pro.nvim",
     config = function()
       require("monokai-pro").setup {
+        transparent_background = true,
         filter = "pro",
+        inc_search = "background",
+        background_clear = {
+          "toggleterm",
+          "telescope",
+          "which-key",
+          "renamer",
+          "notify",
+          "neo-tree",
+          "bufferline",
+          "float_win",
+        },
+        plugins = {
+          bufferline = {
+            underline_selected = true,
+            underline_visible = false,
+            underline_fill = true,
+            bold = false,
+          },
+          indent_blankline = {
+            context_highlight = "pro",
+            context_start_underline = true,
+          },
+        },
       }
     end,
   },
