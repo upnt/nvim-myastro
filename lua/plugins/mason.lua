@@ -16,6 +16,8 @@ return {
         "texlab",
         -- cpp
         "clangd",
+        -- json
+        "jsonls",
         -- add more arguments for adding more language servers
       },
     },

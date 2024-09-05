@@ -7,6 +7,7 @@ return {
     ensure_installed = {
       "lua",
       "vim",
+      "jsonc",
       -- add more arguments for adding more treesitter parsers
     },
   },
