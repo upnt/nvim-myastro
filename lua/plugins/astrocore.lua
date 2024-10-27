@@ -16,8 +16,6 @@ return {
       diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
       highlighturl = true, -- highlight URLs at start
       notifications = true, -- enable notifications at start
-      fileencodings = "ucs-bom,utf-8,iso-2022-jp,sjis,cp936,cp932,gb18030,big5,enc-jp,euc-kr,default,latin1,latin",
-      fileencoding = "utf-8",
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
@@ -32,6 +30,8 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        fileencodings = "ucs-bom,utf-8,iso-2022-jp,sjis,cp936,cp932,gb18030,big5,enc-jp,euc-kr,default,latin1,latin",
+        fileencoding = "utf-8",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
