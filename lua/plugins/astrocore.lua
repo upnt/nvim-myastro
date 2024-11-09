@@ -35,7 +35,8 @@ return {
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
-        python3_host_prog = vim.fn.expand "$HOME/.local/share/pynvim/.venv/bin/python",
+        python_host_prog = vim.fn.expand "$PYENV_ROOT/versions/py2nvim/bin/python",
+        python3_host_prog = vim.fn.expand "$PYENV_ROOT/versions/py3nvim/bin/python",
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
       },
