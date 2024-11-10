@@ -8,17 +8,14 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        -- lua
-        "lua_ls",
-        -- shell
         "bashls",
-        -- latex
-        "texlab",
-        -- cpp
         "clangd",
-        -- json
+        "cmake",
+        "grammary",
         "jsonls",
-        -- add more arguments for adding more language servers
+        "lua_ls",
+        "texlab",
+        "pyright",
       },
     },
   },
@@ -28,18 +25,22 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        -- lua
-        "stylua",
-        -- shell
         "beautysh",
-        "shellcheck",
-        -- latex
-        "latexindent",
         "bibtex-tidy",
-        -- cpp
-        "cpplint",
+        "black",
+        "checkmake",
         "clang-format",
-        -- add more arguments for adding more null-ls sources
+        "cmakelang",
+        "cpplint",
+        "isort",
+        "mypy",
+        "markdownlint",
+        "latexindent",
+        "pyproject-flake8",
+        "selene",
+        "shellcheck",
+        "shfmt",
+        "stylua",
       },
     },
   },
@@ -48,11 +49,10 @@ return {
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
       ensure_installed = {
-        -- bash
         "bash-debug-adapter",
-        -- cpp
+        "codelldb",
         "cpptools",
-        -- add more arguments for adding more debuggers
+        "debugpy",
       },
     },
   },
