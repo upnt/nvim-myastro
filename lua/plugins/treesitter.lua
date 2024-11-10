@@ -5,10 +5,10 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
-      "lua",
-      "vim",
-      "jsonc",
-      -- add more arguments for adding more treesitter parsers
+      "all",
+    },
+    highlight = {
+      additional_vim_regex_highlighting = true,
     },
   },
 }
