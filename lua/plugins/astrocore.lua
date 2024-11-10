@@ -30,10 +30,13 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        fileencodings = "ucs-bom,utf-8,iso-2022-jp,sjis,cp936,cp932,gb18030,big5,enc-jp,euc-kr,default,latin1,latin",
+        fileencoding = "utf-8",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
-        python3_host_prog = vim.fn.expand "$HOME/.local/share/pynvim/.venv/bin/python",
+        python_host_prog = vim.fn.expand "$PYENV_ROOT/versions/py2nvim/bin/python",
+        python3_host_prog = vim.fn.expand "$PYENV_ROOT/versions/py3nvim/bin/python",
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
       },
