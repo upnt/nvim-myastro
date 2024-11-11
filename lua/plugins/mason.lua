@@ -11,7 +11,7 @@ return {
         "bashls",
         "clangd",
         "cmake",
-        "grammary",
+        "grammarly",
         "jsonls",
         "lua_ls",
         "texlab",
