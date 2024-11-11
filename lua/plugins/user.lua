@@ -46,6 +46,14 @@ return {
     end,
   },
   {
+    "rcarriga/nvim-notify",
+    config = function()
+      require("notify").setup {
+        background_colour = "#0000000",
+      }
+    end,
+  },
+  {
     "arnaupv/nvim-devcontainer-cli",
     opts = {
       -- By default, if no extra config is added, following nvim_dotfiles are
