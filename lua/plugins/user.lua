@@ -14,46 +14,6 @@ return {
     config = function() require("lsp_signature").setup() end,
   },
   {
-    "loctvl842/monokai-pro.nvim",
-    config = function()
-      require("monokai-pro").setup {
-        transparent_background = true,
-        filter = "pro",
-        inc_search = "background",
-        background_clear = {
-          "toggleterm",
-          "telescope",
-          "which-key",
-          "renamer",
-          "notify",
-          "neo-tree",
-          "bufferline",
-          "float_win",
-        },
-        plugins = {
-          bufferline = {
-            underline_selected = true,
-            underline_visible = false,
-            underline_fill = true,
-            bold = false,
-          },
-          indent_blankline = {
-            context_highlight = "pro",
-            context_start_underline = true,
-          },
-        },
-      }
-    end,
-  },
-  {
-    "rcarriga/nvim-notify",
-    config = function()
-      require("notify").setup {
-        background_colour = "#0000000",
-      }
-    end,
-  },
-  {
     "arnaupv/nvim-devcontainer-cli",
     opts = {
       -- By default, if no extra config is added, following nvim_dotfiles are
