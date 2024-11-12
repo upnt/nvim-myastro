@@ -88,10 +88,10 @@ return {
           "dap",
           "gitsigns",
           "indent-blankline",
-          "mini",
           "nvim-cmp",
           "nvim-web-devicons",
           "which-key",
+          -- "nvim-notify",
         },
         disable = {
           background = true,
