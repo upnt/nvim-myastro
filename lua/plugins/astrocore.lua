@@ -30,7 +30,7 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
-        fileencodings = "iso-2022-jp,sjis,cp936,cp932,gb18030,big5,enc-jp,euc-kr,ucs-bom,utf-8,default,latin1,latin",
+        fileencodings = "ucs-bom,utf-8,iso-2022-jp,sjis,cp936,cp932,gb18030,big5,enc-jp,euc-kr,default,latin1,latin",
         fileencoding = "utf-8",
         scrolloff = 3,
       },
