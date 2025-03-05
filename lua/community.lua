@@ -18,6 +18,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.markdown-and-latex.markview-nvim" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
+  { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.split-and-window.neominimap-nvim" },
   { import = "astrocommunity.split-and-window.windows-nvim" },
   { import = "astrocommunity.diagnostics.error-lens-nvim" },
