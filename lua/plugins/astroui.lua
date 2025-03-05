@@ -10,7 +10,7 @@ return {
     ---@type AstroUIOpts
     opts = {
       -- change colorscheme
-      colorscheme = "material",
+      colorscheme = "monokai-pro",
       -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
       highlights = {
         init = { -- this table overrides highlights in all themes
@@ -41,7 +41,8 @@ return {
     config = function()
       require("monokai-pro").setup {
         transparent_background = true,
-        filter = "pro",
+        devicons = true,
+        filter = "machine",
         inc_search = "background",
         background_clear = {
           "toggleterm",
@@ -52,13 +53,15 @@ return {
           "neo-tree",
           "bufferline",
           "float_win",
+          "mason",
+          "Lightline",
         },
         plugins = {
           bufferline = {
             underline_selected = true,
-            underline_visible = false,
+            underline_visible = true,
             underline_fill = true,
-            bold = false,
+            bold = true,
           },
           indent_blankline = {
             context_highlight = "pro",
@@ -94,7 +97,7 @@ return {
           -- "nvim-notify",
         },
         disable = {
-          background = true,
+          -- background = true,
         },
         lualine_stype = "stealth",
       }

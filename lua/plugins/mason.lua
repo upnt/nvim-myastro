@@ -8,7 +8,6 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        "grammarly",
         "texlab",
       },
     },
