@@ -16,10 +16,13 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
-  { import = "astrocommunity.lsp.lsp-signature-nvim" },
+  { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
-  { import = "astrocommunity.scrolling.nvim-scrollbar" },
+  { import = "astrocommunity.scrolling.satellite-nvim" },
+  { import = "astrocommunity.split-and-window.mini-map" },
+  { import = "astrocommunity.split-and-window.windows-nvim" },
+  { import = "astrocommunity.diagnostic.error-lens-nvim" },
+  { import = "astrocommunity.icon.mini-icons" },
   { import = "astrocommunity.neovim-lua-development.lazydev-nvim" },
   -- import/override with your plugins folder
 }

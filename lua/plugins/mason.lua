@@ -30,6 +30,19 @@ return {
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
       ensure_installed = {},
+      handlers = {
+        python = function(_)
+          local dap = require "dap"
+          dap.configurations.python = {
+            {
+              type = "python",
+              request = "launch",
+              name = "Launch file",
+              program = "${file}",
+            },
+          }
+        end,
+      },
     },
   },
 }
