@@ -21,7 +21,7 @@ return {
   { import = "astrocommunity.scrolling.satellite-nvim" },
   { import = "astrocommunity.split-and-window.mini-map" },
   { import = "astrocommunity.split-and-window.windows-nvim" },
-  { import = "astrocommunity.diagnostic.error-lens-nvim" },
+  { import = "astrocommunity.diagnostics.error-lens-nvim" },
   { import = "astrocommunity.icon.mini-icons" },
   { import = "astrocommunity.neovim-lua-development.lazydev-nvim" },
   -- import/override with your plugins folder
