@@ -41,6 +41,12 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      ltex = {
+        dictionary = (function()
+          local path = vim.fn.stdpath "config" .. "/spell/en.utf-8.add"
+          return { en = path }
+        end)(),
+      },
     },
     -- customize how language servers are attached
     handlers = {
@@ -93,7 +99,8 @@ return {
     },
     -- A custom `on_attach` function to be run after the default `on_attach` function
     -- takes two parameters `client` and `bufnr`  (`:h lspconfig-setup`)
-    on_attach = function(client, bufnr)
+    -- on_attach = function(client, bufnr)
+    on_attach = function(_, _)
       -- this would disable semanticTokensProvider for all clients
       -- client.server_capabilities.semanticTokensProvider = nil
     end,

@@ -8,14 +8,8 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        "bashls",
-        "clangd",
-        "cmake",
         "grammarly",
-        "jsonls",
-        "lua_ls",
         "texlab",
-        "pyright",
       },
     },
   },
@@ -25,23 +19,9 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        "beautysh",
         "bibtex-tidy",
-        "black",
-        "checkmake",
-        "clang-format",
-        "cmakelang",
-        "cpplint",
-        "isort",
         "latexindent",
-        "mypy",
-        "markdownlint",
-        "pyproject-flake8",
-        "selene",
-        "shellcheck",
-        "shfmt",
-        "stylua",
-        "textlint",
+        "rstcheck",
       },
     },
   },
@@ -49,12 +29,7 @@ return {
     "jay-babu/mason-nvim-dap.nvim",
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = {
-      ensure_installed = {
-        "bash-debug-adapter",
-        "codelldb",
-        "cpptools",
-        "debugpy",
-      },
+      ensure_installed = {},
     },
   },
 }
