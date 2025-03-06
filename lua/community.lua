@@ -21,7 +21,8 @@ return {
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.split-and-window.neominimap-nvim" },
   { import = "astrocommunity.split-and-window.windows-nvim" },
-  { import = "astrocommunity.diagnostics.error-lens-nvim" },
+  { import = "astrocommunity.diagnostics.tiny-inline-diagnostic-nvim" },
   { import = "astrocommunity.icon.mini-icons" },
+  { import = "astrocommunity.recipes.neovide" },
   -- import/override with your plugins folder
 }
