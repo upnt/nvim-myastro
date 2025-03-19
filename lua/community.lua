@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cmake" },
-  { import = "astrocommunity.pack.chezmoi" },
+  -- { import = "astrocommunity.pack.chezmoi" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.json" },
